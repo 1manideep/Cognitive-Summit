@@ -7,3 +7,4 @@ openai
 pydantic
 beautifulsoup4
 openpyxl
+google-generativeai
