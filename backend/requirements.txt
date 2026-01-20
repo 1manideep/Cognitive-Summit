@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+playwright
+pandas
+python-dotenv
+openai
+pydantic
+beautifulsoup4
+openpyxl
