@@ -20,6 +20,9 @@ app.add_middleware(
 class ValidateRequest(BaseModel):
     filename: str
 
+class ExtractRequest(BaseModel):
+    url: str
+
 @app.post("/scrape")
 async def scrape_leads(request: ExtractRequest):
     try:
