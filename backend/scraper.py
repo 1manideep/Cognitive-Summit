@@ -11,8 +11,9 @@ class ConferenceScraper:
 
     async def start_browser(self):
         self.playwright = await async_playwright().start()
-        # Use ScraperAPI Proxy
-        proxy_url = f"http://scraperapi:{os.getenv('SCRAPERAPI_KEY')}@proxy-server.scraperapi.com:8001"
+        # Use ScraperAPI Proxy with Render and AntiBot enabled
+        # Syntax: scraperapi.render=true.antibot=true:KEY
+        proxy_url = f"http://scraperapi.render=true.antibot=true:{os.getenv('SCRAPERAPI_KEY')}@proxy-server.scraperapi.com:8001"
         print(f"Using Proxy: {proxy_url.replace(os.getenv('SCRAPERAPI_KEY'), '***')}")
 
         self.browser = await self.playwright.chromium.launch(
