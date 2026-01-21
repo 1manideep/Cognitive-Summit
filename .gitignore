@@ -1,18 +1,27 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-venv/
-.env
+# Data Files
+*.csv
+*.xlsx
+*.json
+!package.json
+!tsconfig.json
+!jsconfig.json
+!vercel.json
+!firebase.json
 
-# Node
+# Environment
+.env
+.env.local
+.venv
+venv/
+__pycache__/
+*.pyc
+
+# Dependencies
 node_modules/
 dist/
+build/
+
+# System
 .DS_Store
-
-# Excel/Data
-*.xlsx
-*.csv
-
-# Firebase
-.firebase/
+.idea/
+.vscode/

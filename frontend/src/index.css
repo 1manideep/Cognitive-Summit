@@ -2,8 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-[#0F0A1E] text-white;
+@layer utilities {
+  .clip-path-polygon {
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
   }
+}
+
+/* Custom Animation for Hero Blocks */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+    /* Move starts lower */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  opacity: 0;
+  /* Start hidden */
+  animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Helper delays for animation */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Mermaid Diagram Scaling */
+.mermaid-container svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
 }

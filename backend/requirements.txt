@@ -8,3 +8,6 @@ pydantic
 beautifulsoup4
 openpyxl
 google-generativeai
+crawl4ai
+aiohttp
+duckduckgo-search
