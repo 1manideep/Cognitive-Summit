@@ -4,7 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDWlQgos6CnuBI9XUqgWbqLp1fCrltvLfw",
+    apiKey: "----",
     authDomain: "cognitive-summit.firebaseapp.com",
     projectId: "cognitive-summit",
     storageBucket: "cognitive-summit.firebasestorage.app",
