@@ -114,8 +114,4 @@ The frontend will run on `http://localhost:5173`. It connects to the backend at 
 └── README.md               # You are here
 ```
 
----
 
-## 🛡️ License
-
-Private Assessment Code - All Rights Reserved.
